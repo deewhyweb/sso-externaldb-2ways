@@ -1,7 +1,11 @@
 ## Using the operator
 
 Create project
+
 Install postgres
+
+`oc new-app --name=postgresql --template=postgresql-persistent -p  POSTGRESQL_USER=user -p POSTGRESQL_PASSWORD=pass`
+
 Create secret
 
 `oc apply -f keycloak-db-secret.yml`
@@ -13,7 +17,10 @@ Deploy RHSSO with external db flag
 ## Using the template
 
 Install RHSSO74 from template
+
 Install postgres
+
+`oc new-app --name=postgresql --template=postgresql-persistent -p  POSTGRESQL_USER=user -p POSTGRESQL_PASSWORD=pass`
 
 `oc create configmap extensions --from-file=extensions`
 
