@@ -1,3 +1,11 @@
+# Red Hat SSO connecting to external database 2 ways
+
+This repository demonstrates connecting to an external postgres database from Red Hat SSO using two methods:
+
+* Using the Red Hat SSO operator
+* Using a config map to add files to a Red Hat SSO instance deployed by template
+
+Both of these methods achieve the same result, the config map method is more flexible though and will provide support for different databases and complicated configurations. 
 ## Using the operator
 
 Create project
@@ -10,7 +18,7 @@ Create secret
 
 `oc apply -f keycloak-db-secret.yml`
 
-Install Operator
+Install Red Hat SSO Operator
 
 Deploy RHSSO with external db flag
 
