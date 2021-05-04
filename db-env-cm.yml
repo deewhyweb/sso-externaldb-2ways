@@ -5,4 +5,4 @@ metadata:
 data: 
   EXTERNAL_DB_USERNAME: user
   EXTERNAL_DB_PASSWORD: pass
-  EXTERNAL_DB_JDBC_URL: jdbc:postgresql://postgresql.rhsso-template.svc.cluster.local/sampledb
+  EXTERNAL_DB_JDBC_URL: jdbc:postgresql://postgresql.rhsso.svc.cluster.local/sampledb
